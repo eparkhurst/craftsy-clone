@@ -10,5 +10,6 @@ public class AccountActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
         getSupportActionBar().setTitle("Account");
+        getSupportActionBar().setElevation(0);
     }
 }

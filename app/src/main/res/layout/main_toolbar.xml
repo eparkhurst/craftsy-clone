@@ -12,6 +12,7 @@
         android:theme="?attr/actionBarTheme"
         android:minHeight="?attr/actionBarSize"
         android:id="@+id/toolbar"
+        android:elevation="2dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -36,7 +37,7 @@
                     android:id="@+id/homeText"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/custom_brown"
                     android:fontFamily="sans-serif-condensed"
                     android:textSize="@dimen/toolbar_fontsize"
                     android:clickable="true"
@@ -44,7 +45,7 @@
 
                 <ImageButton
                     android:layout_width="match_parent"
-                    app:srcCompat="@drawable/home"
+                    app:srcCompat="@drawable/newhome"
                     android:id="@+id/homeButton"
                     android:scaleType="fitCenter"
                     android:background="@null"
@@ -71,14 +72,14 @@
                     android:id="@+id/searchText"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/custom_brown"
                     android:textSize="@dimen/toolbar_fontsize"
                     android:onClick="toSearch"
                     android:clickable="true"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
-                    app:srcCompat="@drawable/search"
+                    app:srcCompat="@drawable/newsearch"
                     android:id="@+id/searchButton"
                     android:scaleType="fitCenter"
                     android:background="@null"
@@ -103,14 +104,14 @@
                     android:id="@+id/favoritesText"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/custom_brown"
                     android:textSize="@dimen/toolbar_fontsize"
                     android:clickable="true"
                     android:onClick="toFavorites"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
-                    app:srcCompat="@drawable/heart"
+                    app:srcCompat="@drawable/heartoutline"
                     android:id="@+id/favoritesButton"
                     android:scaleType="fitCenter"
                     android:background="@null"
@@ -135,14 +136,14 @@
                     android:id="@+id/accountText"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/custom_brown"
                     android:textSize="@dimen/toolbar_fontsize"
                     android:clickable="true"
                     android:onClick="toAccount"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
-                    app:srcCompat="@drawable/person"
+                    app:srcCompat="@drawable/user"
                     android:id="@+id/accountButton"
                     android:scaleType="fitCenter"
                     android:background="@null"
@@ -167,14 +168,14 @@
                     android:id="@+id/cartText"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/custom_brown"
                     android:textSize="@dimen/toolbar_fontsize"
                     android:clickable="true"
                     android:onClick="toCart"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
-                    app:srcCompat="@drawable/cart"
+                    app:srcCompat="@drawable/shoppingcart"
                     android:id="@+id/cartButton"
                     android:scaleType="fitCenter"
                     android:background="@null"

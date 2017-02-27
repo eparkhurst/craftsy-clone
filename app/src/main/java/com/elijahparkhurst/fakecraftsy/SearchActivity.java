@@ -9,5 +9,6 @@ public class SearchActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         getSupportActionBar().setTitle("Search");
+        getSupportActionBar().setElevation(0);
     }
 }
