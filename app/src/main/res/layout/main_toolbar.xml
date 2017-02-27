@@ -20,15 +20,14 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="@dimen/tool_bar_height"
-            android:paddingTop="5dp"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="15dp">
+            android:layout_centerHorizontal="true">
 
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:id="@+id/menuHome">
 
                 <TextView
                     android:text="Home"
@@ -39,7 +38,9 @@
                     android:layout_centerHorizontal="true"
                     android:textColor="@android:color/black"
                     android:fontFamily="sans-serif-condensed"
-                    android:textSize="@dimen/toolbar_fontsize" />
+                    android:textSize="@dimen/toolbar_fontsize"
+                    android:clickable="true"
+                    android:onClick="toHome"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
@@ -60,7 +61,8 @@
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:id="@+id/menuSearch">
 
                 <TextView
                     android:text="Search"
@@ -70,7 +72,9 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/toolbar_fontsize"/>
+                    android:textSize="@dimen/toolbar_fontsize"
+                    android:onClick="toSearch"
+                    android:clickable="true"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
@@ -83,7 +87,7 @@
                     android:layout_above="@+id/searchText"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:onClick="toSearch" />
+                    android:onClick="toSearch"/>
 
             </RelativeLayout>
 
@@ -100,7 +104,9 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/toolbar_fontsize"/>
+                    android:textSize="@dimen/toolbar_fontsize"
+                    android:clickable="true"
+                    android:onClick="toFavorites"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
@@ -130,7 +136,9 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/toolbar_fontsize"/>
+                    android:textSize="@dimen/toolbar_fontsize"
+                    android:clickable="true"
+                    android:onClick="toAccount"/>
 
                 <ImageButton
                     android:layout_width="match_parent"
@@ -160,7 +168,9 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/toolbar_fontsize"/>
+                    android:textSize="@dimen/toolbar_fontsize"
+                    android:clickable="true"
+                    android:onClick="toCart"/>
 
                 <ImageButton
                     android:layout_width="match_parent"

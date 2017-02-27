@@ -19,7 +19,8 @@
         <activity android:name=".FavoritesActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".AccountActivity" />
-        <activity android:name=".CartActivity"></activity>
+        <activity android:name=".CartActivity" />
+        <activity android:name=".BaseActivity"></activity>
     </application>
 
 </manifest>
