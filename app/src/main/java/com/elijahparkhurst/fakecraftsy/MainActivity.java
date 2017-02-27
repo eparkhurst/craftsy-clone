@@ -1,6 +1,6 @@
 package com.elijahparkhurst.fakecraftsy;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 
 
@@ -10,9 +10,12 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.mipmap.ic_craftsylogo);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+        final ActionBar actionBar = getSupportActionBar();
+
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setLogo(R.drawable.craftsylogo);
+        actionBar.setDisplayUseLogoEnabled(true);
     }
 
 }
