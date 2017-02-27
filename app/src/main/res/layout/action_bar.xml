@@ -22,6 +22,8 @@
             android:layout_height="match_parent"
             android:scaleType="fitStart"
             app:srcCompat="@drawable/craftsylogo"
-            android:id="@+id/craftsy_logo" />
+            android:id="@+id/craftsy_logo"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
     </FrameLayout>
 </android.support.v7.widget.Toolbar>
